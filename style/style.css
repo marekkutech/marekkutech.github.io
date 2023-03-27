@@ -42,10 +42,12 @@ a:hover {
 
 #topmenu { 
   width: 100%;
-  height: 30px;
+  height: auto;
   float: left;
   background: #B1D6F5;
-  padding: 2px;} 
+  padding: 2px;
+  border-top: double;
+  border-bottom: double;} 
   
 ul#menu, ul#menu li
 { float: left;
@@ -56,7 +58,7 @@ ul#menu li
 { list-style: none;}
 
 ul#menu li a {
-  font: 20px 'DOS', sans-serif;
+  font: 20px 'DOS', arial;
   display: block; 
   float: left; 
   margin: 5px 20px 5px 20px;
@@ -68,26 +70,43 @@ ul#menu li a {
 ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 { color: red;
   background: #B1D6F5;}
+  
+#container {
+  width: 100%;}
+  
+ul#items {
+  font: 15px Arial;
+  color: black;
+  margin: 5px;
+  padding-left: 15px;}
 
-.iframe-container {
+#iframe-container {
   overflow: hidden;
-  width: 70%;
+  width: 1500px;
   height: 1024px;
   position: relative;
   background: white;}
+  
+#iframe-menu {
+  overflow: hidden;
+  width: 200px;
+  height: 500px;
+  position: relative;
+  background: #63ADEB;
+  float: left;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;}
 
 iframe {
-   border: 0;
+   border: 1px solid;
    height: 100%;
-   left: 0;
    position: absolute;
-   top: 0;
-   width: 100%;
-   margin: 5px;
+   width: 99%;
    background: white;}
 
-.article {
-  background: white;}
+#article {
+  background: white;
+  padding: 10px;}
 
 #footer { 
   width: 1024px;
@@ -117,7 +136,7 @@ table tr td {
   src: url('../style/ModernDOS9x14.ttf');
   font-style: normal;}
 
-.blink_me {
+.blink {
   animation: blinker 700ms linear infinite;
 }
 
