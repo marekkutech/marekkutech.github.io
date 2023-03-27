@@ -13,6 +13,10 @@ h2 {
   font: 15px 'DOS', arial;
   color: black;}
 
+h3 {
+  font: 20px 'DOS', arial;
+  color: black;}
+
 a { 
   outline: none;
   text-decoration: none;
