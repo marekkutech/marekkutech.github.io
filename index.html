@@ -10,27 +10,37 @@
 </head>
 
 <body>
-  <div id="main">
-    <div id="header">
-     <a>Marekku Tech .net</a><a class="blink_me">_</a>
-     <h2>Tech blog about Electronics, Computers and more</h2>
+    <div id="main">
+          <div id="header">
+          <a>Marekku Tech .net</a><a class="blink">_</a>
+          <h2>Tech blog about Electronics, Computers and more</h2>
+        </div>
     </div>
-  </div>
+
     <div id="topmenu">
         <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="testequip.html">Test Equipment</a></li>
-          <li><a href="computers.html">Computers</a></li>
-          <li><a href="cars.html">Cars</a></li>
+          <li><a href="main.html" target="content">Main</a></li>
+          <li><a href="./pages/pr_menu.html" target="menu">Projects</a></li>
+          <li><a href="./pages/te_menu.html"target="menu">Test Equipment</a></li>
+          <li><a href="./pages/pc_menu.html"target="menu">Computers</a></li>
+          <li><a href="./pages/cr_menu.html" target="menu">Cars</a></li>
+          <li><a href="./pages/links.html" target="content">Links</a></li>
         </ul>
     </div>
-    <div class="iframe-container">
-        <iframe src="main.html" allowfullscreen scrolling="no"></iframe>
-    </div>
-<div id="footer">
+    
+    <div id="container">
+        <div id="iframe-menu">
+          <iframe src="./pages/pr_menu.html" name="menu" allowfullscreen scrolling="no"></iframe>
+        </div>
+          
+        <div id="iframe-container">
+          <iframe src="main.html" name="content" allowfullscreen scrolling="no"></iframe>
+        </div>
+    </div>   
+    
+    <div id="footer">
       <h3>MAREKKUTECH.net</h3>
     </div>
-  </div>
+
 </body>
 </html>
